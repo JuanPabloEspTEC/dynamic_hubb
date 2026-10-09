@@ -1,0 +1,22 @@
+[project]
+name = "dynamic-hubb"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "JuanPabloEspTEC", email = "a01646333@tec.mx" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "ipykernel>=7.4.0",
+    "jupyter>=1.1.1",
+    "numpy>=2.5.3",
+    "pandas>=3.0.6",
+    "pyswarms>=1.3.0",
+]
+
+[project.scripts]
+dynamic-hubb = "dynamic_hubb:main"
+
+[build-system]
+requires = ["uv_build>=0.12.8,<0.13.0"]
+build-backend = "uv_build"
